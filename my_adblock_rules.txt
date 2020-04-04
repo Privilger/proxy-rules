@@ -1,0 +1,1 @@
+URL-REGEX,^http:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/*\.jpg
