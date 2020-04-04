@@ -1,1 +1,3 @@
-URL-REGEX,^http:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/*\.jpg
+URL-REGEX,^http:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/[\s\S]*\.jpg
+
+URL-REGEX,^http:\/\/image1\.ljcdn\.com\/materials\/appindexconf\/[\s\S]*\.jpg
