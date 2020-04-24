@@ -1,0 +1,8 @@
+#!name=WPS_VIP
+#!desc=wps local vip
+
+[Script]
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+
+[MITM]
+hostname = %APPEND% account.wps.cn

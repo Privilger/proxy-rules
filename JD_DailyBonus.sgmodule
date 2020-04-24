@@ -1,5 +1,5 @@
-#!name=Apps automation
-#!desc=App automatic operation
+#!name=JD_DailyBonus 
+#!desc=jd sign in
 
 [Script]
 # 京东签到
