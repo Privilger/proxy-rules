@@ -1,0 +1,8 @@
+#!name=Daily Check In
+#!desc=meituan
+
+[Script]
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
+
+[MITM]
+hostname = %APPEND% i.meituan.com

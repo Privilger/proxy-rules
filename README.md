@@ -5,3 +5,6 @@
 | 匹配任意字符串 | `[\s\S]*` | `\s`空白符，`\S`非空白符，所以`[\s\S]`是任意字符 |
 | 匹配包含某字符串xxx | `[\s\S]*xxx[\s\S]*` | 嗯，就是把匹配任意字符串合起来 |
 
+# 资源
+
+https://github.com/NobyDa/Script/tree/master
