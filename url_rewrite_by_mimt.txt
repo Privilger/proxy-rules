@@ -511,6 +511,7 @@
 ^https:\/\/static\.95508\.com\/mmg\/images\/ads\/[\s\S]* - reject
 # > 天天基金
 ^https:\/\/j5\.dfcfw\.com\/app\/[\s\S]* - reject
+^https:\/\/j5\.dfcfw\.com\/WG\/appconf\/[\s\S]*png - reject
 # > 什么值得买
 ^https:\/\/eimg\.smzdm\.com\/[\s\S]*\.jpg - reject
 # > 银盛通
