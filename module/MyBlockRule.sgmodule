@@ -1,0 +1,90 @@
+#!name=MyBlockRule
+#!desc=custom rule
+
+[URL Rewrite]
+# >> Baidu
+^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx - reject
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject
+# >> ByteDance
+^https?:\/\/.+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/.+/img\/ad\.union\.api\/ - reject
+# >> JD
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture - reject
+# >> Kingsoft
+^https?:\/\/\w+\.kingsoft-office-service\.com\/ad - reject
+# > Keep
+^https?:\/\/api\.gotokeep\.com\/ads - reject
+# >> MI
+^https?:\/\/api-mifit.+\.huami\.com\/discovery\/mi\/discovery\/.+_ad\? - reject
+# > 拼多多
+^https?:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash - reject
+# > 苏宁
+^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ - reject
+# > 搜狗
+^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+\.jpg - reject
+# >> SMZDM
+^https?:\/\/app-api\.smzdm\.com\/util\/loading - reject
+^https?:\/\/s\d\.zdmimg\.com\/www\/api\/v\d\/api\/thirdAd\.php - reject
+# > 威锋
+^https?:\/\/api\.feng\.com\/v\d\/advertisement\/.*Claunch - reject
+# > 印象笔记
+^https?:\/\/app\.yinxiang\.com\/ads\/ - reject
+# >> Zhihu
+^https?:\/\/api\.zhihu\.com\/ad- - reject
+^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) - reject
+^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
+# > 作业帮
+^https?:\/\/www\.zybang\.com\/adx\/ - reject
+# > 中国银行
+^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? - reject
+# > 中信银行
+^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+\/appStartAdv - reject
+# > 中国工商银行
+^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ - reject
+# > 中国招商银行
+^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json - reject
+^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/getAdvertisement\.json - reject
+^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/ - reject
+# > 中国民生银行
+^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ - reject
+# > 中国广发银行
+^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/.{25}\.jpg - reject
+# >> 咪咕
+^https?:\/\/gg\w+\.cmvideo\.cn\/v\d\/iflyad\/ - reject
+^https?:\/\/ggic(\d)?\.cmvideo\.cn\/ad\/ - reject
+^https?:\/\/ggx\.cmvideo\.cn\/request\/ - reject
+^https?:\/\/.+\/cdn-adn\/ - reject
+# CUSTOM URL
+# > 叮咚买菜
+^https:\/\/img\.ddimg\.mobi\/[\s\S]*\?imageView2\/3\/w\/1242\/format\/webp\/q\/90\/imageslim - reject
+^https:\/\/img\.ddimg\.mobi\/[\s\S]*\.(gif|jpg|png|jpeg)$ - reject
+# > 土豆雅思专业版
+^https:\/\/todoen\.oss-cn-beijing\.aliyuncs\.com\/promote\/splash\/[\s\S]* - reject
+# 关闭更新检查
+# > 集享联盟
+^https:\/\/app\.maxxipoint\.com\/api\/version\/check - reject
+# > QQ音乐
+^https:\/\/wa\.gtimg\.com\/adxcdn\/[\s\S]* - reject
+# > 发现精彩
+^https:\/\/static\.95508\.com\/mmg\/images\/ads\/[\s\S]* - reject
+# > 天天基金
+^https:\/\/j5\.dfcfw\.com\/app\/[\s\S]* - reject
+^https:\/\/j5\.dfcfw\.com\/WG\/appconf\/[\s\S]*png - reject
+# > 什么值得买
+^https:\/\/eimg\.smzdm\.com\/[\s\S]*\.jpg - reject
+# > 银盛通
+^https:\/\/ad\.ysepay\.com\/yst-ad\/[\s\S]* - reject
+# > 随手记
+^https:\/\/downloads\.feidee\.com\/sq\/\/static\/fod\/fodder\/[\s\S]* - reject
+# > 饿了吗
+^https:\/\/cube\.elemecdn\.com\/[\s\S]*w_1242,h_2256[\s\S]* - reject
+# > 蛋卷基金
+^https:\/\/danjuan\.aiganggu\.com\/[\s\S]* - reject
+# > 小米有品
+^https:\/\/img\.youpin\.mi-img\.com\/[\s\S]*w=1080&h=2160[\s\S]* - reject
+
+
+
+
+[MITM]
+hostname = %APPEND% i.meituan.com, app.yinxiang.com, mlife.jf365.boc.cn, v.icbc.com.cn, mlife.cmbchina.com, pic1cdn.cmbchina.com, mps.95508.com, img.ddimg.mobi, todoen.oss-cn-beijing.aliyuncs.com, app.maxxipoint.com, wa.gting.com, static.95508.com, j5.dfcfw.com, eimg.smzdm.com, ad.ysepay.com, downloads.feidee.com, cube.elemecdn.com, danjuan.aiganggu.com, img.youpin.mi-img.com
